@@ -1,0 +1,550 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*start glohbal styling*/
+h1,h2,h3,h4,h5,h6{
+  line-height: 1.5; /*par default line-height:normal (entre 110% et 120% 1.1->1.2)*/
+  font-weight: 300; /*par default font-weight:normal (400 and the bold is 700)*/
+  margin: 0.5em 0;  /*em is a relative unit in css that means 0.5* the parent element's font size*/
+  /*The default font size for the HTML element in many web browsers is typically 16 pixels*/
+}
+h1{
+  font-size: 2.5em;
+}
+h2{
+  font-size: 2em;
+}
+h3{
+  font-size: 1.6em;
+}
+h4{
+  font-size: 1.4em;
+}
+h5{
+  font-size: 1.2em;
+}
+h6{
+  font-size: 1em;
+}
+a{
+  text-decoration:  none;
+}
+p, label, strong {
+  font-size: 0.85em;
+  font-weight: 300;
+  line-height: 2;
+
+}
+.flex{
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 15px;
+
+}
+.badge {
+  padding: 9px 20px;
+  font-size: 0.75em;
+  font-weight: 600;
+  color: #eee;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.badge.new{
+  background-color: #FF205F;
+}
+.badge.strategy{
+  background-color: #4EAE60;
+}
+.badge.adventure,
+.badge.rp{
+  background-color: #40ABF5;
+}
+.badge.racing{
+  background-color: #694EAE;
+}
+.badge.tournament{
+  background-color: #FB6E10;
+}
+.badge.premium-tournament{
+  background-color: #FFB320;
+  color: #252525;
+}
+
+.shade{
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+}
+/*End global styling*/
+
+
+
+/*start heading styling*/
+
+header{
+  background-color: #131313;
+  border-bottom: 1px solid #FFB320;
+  padding: 20px 0;
+}
+
+.menu{ 
+  border: 1px solid #FFB320;
+  padding: 3px 5px;
+  background: transparent;
+  cursor: pointer;
+  width: 30px;
+}
+
+.menu .strip{
+  display: block;
+  height: 1px;
+  background-color: #FFB320;
+  margin: 4px 0px;
+
+}
+nav ul{
+  list-style: none;
+  padding: 0 ;
+  margin: 8px 0 0;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 18px;
+}
+nav ul a{
+  color: #eee;
+    font-weight: 600;
+}
+nav ul a:hover{
+  color: #FFB320;
+}
+#login-register-button{
+  font-size: 0.85em;
+  font-weight: 600;
+  background-color: #FFB320;
+  color: #131313;
+  border-radius: 20px;
+  padding: 9px 15px;
+  margin: auto 0;
+}
+
+/*end heading styling*/
+
+
+/*start hero styling*/
+#hero-box{
+  background: url(images/purple_monkey_bg.jpg) top center no-repeat;
+  height: 820px;
+}
+.hero-maketing-container{
+  margin: 0 auto;
+  position: absolute;
+  top: 40%;
+  left: 0;
+
+
+}
+.hero-maketing-container h1{
+  color: #eee;
+  margin: 0 30px 20px;
+}
+.hero-maketing-container span{
+  color: #FFB320;
+
+  
+}
+.hero-maketing-container h5{
+  color: #eee;
+  font-size: 0.85em;
+  line-height: 2em;
+  max-width: 500px;
+  padding: 0 2.5em 2.5em;
+
+}
+
+.hero-maketing-container button{
+  color: #131313;
+  background-color: #FFB320;
+  border-radius: 25px;
+  padding: 10px 25px;
+  border: none;
+  font-weight: 600;
+  margin: 0 30px 20px;
+}
+/*end hero styling*/
+
+/*start latest-news*/
+#latest-news{
+  background-color: #40ABF5;
+  margin-bottom: 50px;
+}
+
+#latest-news-1{
+  background-color: #FFB320;
+  color: #eee;
+  flex-basis: 25%;
+  text-align: right;
+  padding: 25px;
+}
+#lates-news-container{
+  flex-basis: 75%;
+  background-color: #131313;
+  padding: 1.15em 0px;
+
+}
+#latest-news .flex{
+  padding: 0px;
+  margin: 0px;
+}
+.latest-news-text{
+  color: #eee;
+}
+.latest-news-item .badge.new{
+  margin-left: 25px;
+  margin-right: 20px;
+}
+/*end latest-news*/
+
+/*start game-types-boxes styling*/
+#game-types-boxes{
+  margin-bottom: 75px;
+
+}
+.game-box{
+  flex-basis: 25%;
+  height: 380px;
+  min-width: 150px;
+  position: relative;
+}
+#game-types-boxes .flex{
+  margin: 0 80px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+
+}
+.game-box.new{
+  background: url("images/wow_lady.jpg") top center no-repeat;
+  background-size: cover;
+}
+.game-box.strategy{
+  background: url("images/robotic_ninja.jpg") top center no-repeat;
+  background-size: cover;
+}
+.game-box.rp{
+  background: url("images/jeep_armed.jpg") top center no-repeat;
+  background-size: cover;
+}
+.game-box.racing{
+  background: url("images/sports_car.jpg") top center no-repeat;
+  background-size: cover;
+}
+.game-box .badge{
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  left: 20px;
+}
+.game-box-content{
+  position: absolute;
+  z-index: 2;
+  bottom: 10px;
+  padding: 0 35px 0 25px;
+  color: #eee;
+}
+.game-box-content a{
+  color: #999;
+  font-size: 0.85em;
+  font-weight: 300;
+}
+
+/*end game-types-boxes styling*/
+
+/*start recent-games styling*/
+#recent-games{
+  background: url(images/recent_games_bg.png) top center no-repeat;
+  background-color: #eef2f6;
+  display: relative;
+  padding: 70px 0 120px;
+  border-top: 1px solid #d6dee7;
+  border-bottom: 1px solid #d6dee7;
+
+}
+.recent-games-title{
+text-align: center;
+}
+.recent-game-box {
+  flex-basis: 31%;
+  position: relative;
+  background-color: #fff;
+
+}
+.recent-game-box .badge{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.recent-game-box img{
+  width: 100%;
+}
+
+.recent-game-box-text{
+  padding: 20px;
+}
+.recent-game-box-text p {
+  color: #999;
+}
+.recent-game-box-text a{
+  color: #999;
+  font-size: 0.85em;
+}
+
+
+/*end recent-games styling*/
+
+
+/*start tournaments styling*/
+
+#tournaments{
+  background: url("images/footer_bg_pattern.png") 0 0 repeat;
+  padding: 125px 0 105px;
+}
+#tournaments .flex{
+  position: relative;
+}
+#tournaments .badge{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#tournaments .badge.tournament{
+  top: -33px;
+  left: 15px;
+}
+
+.box-premium-tournament{
+  position: relative;
+  flex-basis: 45%;
+  background-color: #252525 ;
+  padding: 70px 20px 40px;
+}
+.tournament-image{
+  float: left;
+  width: 30%;
+}
+.tournament-image img{
+  width: 100%;
+}
+.tournament-text{
+  float: left;
+  width: 60%;
+  padding-left: 25px;
+}
+.tournament-text h3{
+  color:  #FFB320;
+  margin-top: 0;
+}
+.tournament-text label{
+  color:  #999;
+  font-size: 0.75em;
+}
+.tournament-text strong{
+  color: #eee;
+  font-size: 0.75em;
+}
+.tournament-text .prizes{
+  color:  #FFB320;
+  display: inline-block;
+  margin-top: 12px;
+}
+
+
+
+/*end tournaments styling*/
+
+
+/*start recent-reviews styling*/
+#Recent-Reviews{
+  background: url("images/recent_reviews_bg.png") top right no-repeat;
+  padding: 70px 0 50px;
+  background-size: cover;
+}
+#Recent-Reviews h1{
+  text-align: center;
+}
+.Review-box{
+  flex-basis: 23%;
+  background-color: #fafbfd;
+  position: relative;
+}
+.recent-reviews-image img{
+  width: 100%;
+}
+.rate{
+  position: absolute;
+  left: 30px;
+  top: -25px;
+  border-radius: 25px;
+  padding: 13px;
+  color: #eee;
+  font-weight: 700;
+}
+.rate.yellow{
+  background-color: #FFB320;
+}
+.rate.purple{
+  background-color: #694EAE ;
+}
+.rate.green{
+  background-color: #4EAE60;
+}
+.rate.rose{
+  background-color: #FF20AE;
+}
+.game-review-text h4,
+.game-review-text p{
+  text-align: center;
+}
+.game-review-text p{
+  color: #999;
+}
+
+/*end recent-reviews styling*/
+
+
+/*start posts-comments styling*/
+#posts-comments{
+  background: url("images/footer_bg_pattern.png") 0 0 repeat;
+  padding: 80px 100px 60px ;
+
+}
+.latest-posts-box .flex,
+.top-comments-box .flex{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 300px;
+}
+.intro-box{
+  flex-basis: 35%;
+}
+.intro-box p{
+  color: #eee;
+  font-weight: 700;
+  font-size: 0.85em;
+}
+.posts-comments-hero-image img{
+  width: 100%;
+
+}
+.top-comments-box,
+.latest-posts-box{
+  background-color: #252525;
+  flex-basis: 30%;
+  border: 0.5px solid #999;
+  padding: 20px 15px;
+  box-sizing: border-box;
+}
+
+.top-comments-box h3,
+.latest-posts-box h3{
+  color: #eee;
+  font-weight: 500;
+  font-size: 1.45em;
+  padding: 0 15px 5px;
+}
+
+.post .image-post,
+.comment .image-comment{
+  float: left;
+  width: 32%;
+
+}
+.comment .image-comment{
+  width: 26%;
+}
+.image-post img,
+.image-comment img{
+  width: 100%;  
+}
+.image-comment img{
+  border-radius: 60px;
+}
+
+.post-info,
+.comment-info{
+  float: left;
+  width: 60%;
+  padding-left: 5%;
+}
+.post-info h5,
+.comment-info .date{
+  color: #ddf540;
+  margin: 0;
+  font-size: 0.75em;
+
+}
+.post-info p,
+.comment-info p{
+  color: #eee;
+  line-height: 1.5em;
+  font-size: 0.70em;
+  margin: 0.5em 0;
+
+}
+.post-info small{
+  color: #999;
+  font-size: 0.6em;
+}
+
+.top-comments-box .flex{
+  height: 310px;
+}
+.comment-info .author{
+  color: #694EAE;
+  font-size: 1.01em;
+}
+.comment-info span{
+  color: #999;
+}
+
+/*end posts-comments styling*/
+
+
+/*start footer styling*/
+footer{
+  background-color: #131313;
+}
+footer .flex ul{
+  list-style: none;
+  flex-basis: 32%;
+}
+footer .flex ul li{
+  display: inline;
+  padding: 0 12px;
+}
+footer .flex ul li a{
+  color: #eee;
+  cursor: pointer;
+  font-size: 0.85em;
+}
+footer .flex small{
+  text-align: center;
+  margin: auto 0px;
+  color: #eee;
+}
+/*end footer styling*/
+
